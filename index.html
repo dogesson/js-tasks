@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="modules/examples.mjs" type="module"></script>
+
+    <meta charset="UTF-8">
+    <title>JS-Task</title>
+</head>
+<body>
+<h1>JS Tasks</h1>
+Check your bloody console.
+
+<!-- Importing a function straight to HTML from JS module -->
+<script type="module">
+    import {export_to_html_file} from "./modules/Features/Modules.mjs";
+    import {sample_product} from "./modules/Product/ProductTests.mjs";
+
+    document.getElementById("export_target").innerHTML = export_to_html_file();
+    document.getElementById("sample_prod").innerHTML = sample_product();
+
+</script>
+
+<p id="export_target"></p>
+
+<p id="sample_prod"></p>
+
+<h2>JS resources</h2>
+<ul>
+    <li><a href="https://javascript.info/">JavaScript.info</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a></li>
+    <li><a href="https://javascript.plainenglish.io/">JavaScript.PlainEnglish</a></li>
+</ul>
+
+</body>
+</html>
